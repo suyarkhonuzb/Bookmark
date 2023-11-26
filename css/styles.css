@@ -1,7 +1,9 @@
 /* GLOBAL */
 :root{
     --body-bg:#fff;
-    --text-color:#222;
+    --primary-color:#242a45;
+    --accent-color:#5267df;
+    --button-color: #fa5959;
 }
 
 html{
@@ -16,21 +18,25 @@ body{
     flex-direction: column;
     margin: 0;
     padding: 0;
-    font-size: 16px;
-    line-height: 1.5;
-    font-family: 'Roboto', 'Arial',  sans-serif;
+    font-size: 18px;
+    line-height: 28px;
+    font-family: 'Rubik', 'Arial', sans-serif;
 }
 
 *, *::before, *::after{
     box-sizing: inherit;
 }
 
+a{
+    text-decoration: none;
+}
+
 /* CONTAINER */
 .container{
     width: 100%;
-    max-width: 1440px;
-    padding-right: 20px;
-    padding-left: 20px;
+    max-width: 1104px;
+    padding-right: 170px;
+    padding-left: 165px;
     margin-right: auto;
     margin-left: auto;
 }
@@ -70,3 +76,95 @@ body{
 ::placeholder { 
    color:    #909;
 }
+
+/* BUTTON STYLES */
+.button {
+    padding: 12px 33px 11px 32px;
+    background-color: var(--button-color);
+    color: #fff;
+    border-radius: 5px;
+    border: 2px solid transparent;
+    transition: all 0.4s ease;
+}
+
+.button:hover{
+    background-color: #fff;
+    border: 2px solid var(--button-color);
+    opacity: 0.8;
+}
+
+.button:active{
+    opacity: 0.6;
+}
+
+/* HEADER */
+.header{
+    padding-top: 48px;
+    padding-bottom: 110px;
+}
+
+.header__container {
+    padding-top: 8px;
+    padding-bottom: 13px;
+}
+
+.sitenav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+}
+
+.sitenav__logo--link {
+    width: 149px;
+    height: 25px;
+}
+
+.sitenav__logo--link:hover{
+    opacity: 0.8;
+}
+
+.sitenav__logo--link:active{
+    opacity: 0.6;
+}
+
+.sitenav__logo-img {
+    width: 100%;
+}
+
+.logo{
+    flex-shrink: 1;
+}
+
+.sitenav__list {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.sitenav__item:not(:last-child) {
+    margin-right: 48px;
+}
+
+.sitenav__link {
+    display: block;
+    font-size: 13px;
+    line-height: 17px;
+    font-weight: 400;
+    letter-spacing: 1.5px;
+    color: var(--primary-color);
+}
+
+.sitenav__link:hover{
+    color: var(--button-color);
+    opacity: 0.8;
+}
+
+.sitenav__link:active{
+    opacity: 0.6;
+}
+
