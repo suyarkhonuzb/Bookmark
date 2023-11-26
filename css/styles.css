@@ -1,0 +1,72 @@
+/* GLOBAL */
+:root{
+    --body-bg:#fff;
+    --text-color:#222;
+}
+
+html{
+    height: 100%;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: 'Roboto', 'Arial',  sans-serif;
+}
+
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+
+/* CONTAINER */
+.container{
+    width: 100%;
+    max-width: 1440px;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/* VISUALLY HIDDEN */
+.visually-hidden {
+	position: absolute ;
+	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+	clip: rect(1px, 1px, 1px, 1px);
+	padding:0 ;
+	border:0 ;
+	height: 1px ; 
+	width: 1px ; 
+	overflow: hidden;
+}
+
+/* PLACEHOLDER STYLES */
+
+::-webkit-input-placeholder { 
+    color:    #909;
+}
+:-moz-placeholder { 
+   color:    #909;
+   opacity:  1;
+}
+::-moz-placeholder { 
+   color:    #909;
+   opacity:  1;
+}
+:-ms-input-placeholder { 
+   color:    #909;
+}
+::-ms-input-placeholder {
+   color:    #909;
+}
+
+::placeholder { 
+   color:    #909;
+}
