@@ -192,7 +192,7 @@ a{
 }
 
 .sitenav__link:hover{
-    color: var(--button-color);
+    color: var(--red-color);
     opacity: 0.8;
 }
 
