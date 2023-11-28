@@ -17,10 +17,10 @@
 <body>   
     <header class="header">
         <div class="container header__container">
+           <a href="index.html" class="sitenav__logo--link logo">
+                <img class="sitenav__logo-img" src="img/logo.svg" alt="Bookmark logo" width="149" height="25">
+            </a>
             <nav class="sitenav">
-                <a href="index.html" class="sitenav__logo--link logo">
-                    <img class="sitenav__logo-img" src="img/logo.svg" alt="Bookmark logo" width="149" height="25">
-                </a>
                 <ul class="sitenav__list">
                     <li class="sitenav__item">
                         <a class="sitenav__link" href="#">FEATURES</a>
@@ -31,12 +31,26 @@
                     <li class="sitenav__item">
                         <a class="sitenav__link" href="#">CONTACT</a>
                     </li>
-                    <li class="sitenav__item">
-                        <a class="sitenav__link button" href="#">LOGIN</a>
-                    </li>
                 </ul>
             </nav>
+            <a class=" button button--red" href="#">LOGIN</a>
         </div>
     </header>
+
+    <main class="main-content">
+        <section class="hero">
+            <div class="container hero__container">
+                <div class="hero__content">
+                    <h2 class="hero__title">A Simple Bookmark<br>Manager</h2>
+                    <p class="hero__info">A clean and simple interface to organize your favourite websites. Open a new browser tab and see your sites load instantly. Try it for free.</p>
+                    <div class="hero--actions">
+                        <a class="hero--actions__item button button--blue" href="#">Get it on Chrome</a>
+                        <a class="hero--actions__item button button--light" href="#">Get it on Firefox</a>
+                    </div>
+                </div>
+                <img class="hero__img" src="img/Group 2hero-img.png" alt="Bookmark img" width="536" height="346" srcset="img/Group 2hero-img.png 1x, img/Group 2hero-img@2x.png 2x">
+            </div>
+        </section>
+    </main>
 </body>
 </html>
