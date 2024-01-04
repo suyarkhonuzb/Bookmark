@@ -84,11 +84,13 @@ a{
     padding-bottom: 75px;
 }
 
-.section__container {
+.features__section{
+    margin-bottom: 44px;
+}
+
+.section__info {
     display: flex;
     flex-direction: column;
-    width: 100%;
-    max-width: 540px;
     margin-right: auto;
     margin-left: auto;
     text-align: center;
@@ -112,6 +114,99 @@ a{
     color: var(--primary-color);
     opacity: 0.5;
 }
+
+
+/* TABS */
+.tabs {
+    margin: 0;
+    padding: 0;
+}
+
+.tabs__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    border-bottom: 1px solid rgba(73, 93, 207, 0.20);
+}
+
+.tabs__item {
+    padding-top: 27px;
+    padding-bottom: 27px;
+    width: 243px;
+    text-align: center;
+    border-bottom:4px solid transparent;
+}
+
+.tabs__item--active{
+    border-bottom: 4px solid var(--red-color);
+}
+
+.tabs__link {
+    display: block;
+    margin-top: 0;
+    font-size: 16px;
+    line-height: 17px;
+    letter-spacing: 0.53px;
+    font-weight: 400;
+    color: var(--primary-color);
+}
+
+/* TABS PANELS */
+.tabs__panels {
+    padding-top: 72px;
+    background-image: url(../img/bg-image.png);
+    background-repeat: no-repeat;
+    background-position:calc(50% - 508px) 156px;
+    }
+
+.tabs__panel {
+    display: none;
+}
+
+.tab__panel--active{
+    display: block;
+}
+
+.feature-tab-panel {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.feature-tab-panel__img {
+    width: 536px;
+    height: 346px;
+    object-fit: contain;
+    margin-right: 118px;
+}
+
+.feature-tab-panel__info {
+    padding: 0;
+    margin: 0;
+}
+
+.feature-tab-panel__title {
+    margin-top: 0;
+    margin-bottom: 16px;
+    font-size: 32px;
+    line-height: 52px;
+    font-weight: 500;
+    letter-spacing: -0.1px;
+    color: var(--primary-color);
+}
+
+.feature-tab-panel__text {
+    margin-top: 0;
+    margin-bottom: 32px;
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 400;
+    opacity: 0.5;
+}
+
 
 /* BUTTON STYLES */
 .button {
