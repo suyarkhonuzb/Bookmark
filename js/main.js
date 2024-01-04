@@ -32,7 +32,7 @@ elsTabsLinks.forEach(function(elTabsLink){
 
     // Add active class tab__panel elements
     const elTargetPanel = document.querySelector(`#${elTabsLink.href.split('#')[1]}`);
-    console.log(elTargetPanel);
+    elTargetPanel.classList.add(`tab__panel--active`)
     })
 
     // Remove tabs__panel active class
