@@ -1,40 +1,34 @@
 const elsTabsItem = document.querySelectorAll('.tabs__item');
-const elsTabsLinks = document.querySelectorAll('.tabs__link');
-const elTabsPanels = document.querySelectorAll('.tabs__panel');
+const elsTabsLink = document.querySelectorAll('.js-tabs-link');
+const elsTabsPanel = document.querySelectorAll('.tabs__panel');
 
-
-// functions
-
-function deactivationElTabsItem(){
-        // Remove active class tabs__item elements
-        elsTabsItem.forEach(function(elTabsItem){
-            elTabsItem.classList.remove('tabs__item--active')
-        })
-}
-// Remove active class tab__panel elements
-function deactivationElTabPanel(){
-    elTabsPanels.forEach(function(elTabsPanel){
-        elTabsPanel.classList.remove('tabs__panel--active')
+function deactivateElTabItem(){
+     elsTabsItem.forEach(function(elTabsItem)
+        {elTabsItem.classList.remove('tabs__item--active');
     })
 }
 
+function deactivateElTabPanel(){
+    elsTabsPanel.forEach(function(elTabsPanel)
+       {elTabsPanel.classList.remove('tab__panel--active');
+   })
+}
 
-elsTabsLinks.forEach(function(elTabsLink){
-    elTabsLink.addEventListener('click', function(evt){ 
+elsTabsLink.forEach(function(elTabLink){
+    elTabLink.addEventListener('click', function(evt){
         evt.preventDefault;
-    // Remove active class tabs__item elements
-    deactivationElTabsItem();
 
+    // Remove active class tab__item elements
+   deactivateElTabItem();
+        
+    // Add active class to tab__item elements
+    elTabLink.parentElement.classList.add('tabs__item--active');
 
-    // Add active class to tabs__item elements
-    elTabsLink.parentElement.classList.add('tabs__item--active')
-        deactivationElTabPanel();
+    // Remove active class tab__panel elements
+    deactivateElTabPanel();
 
-    // Add active class tab__panel elements
-    const elTargetPanel = document.querySelector(`#${elTabsLink.href.split('#')[1]}`);
-    elTargetPanel.classList.add(`tab__panel--active`)
+    // Show active panel
+    elTabPanel.classList.add(`tab__panel--active`)
     })
-
-    // Remove tabs__panel active class
-
 })
+
