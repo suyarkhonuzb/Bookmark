@@ -522,6 +522,7 @@ a{
     align-items: center;
     padding-top: 20px;
     padding-bottom: 13px;
+    width: 100%;
 }
 
 .accordion__item-header:hover .accordion__item-title{
