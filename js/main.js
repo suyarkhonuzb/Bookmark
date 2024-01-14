@@ -44,7 +44,7 @@ elsTabsLink.forEach(function(elTabLink){
 elsAccordionItemToggler.forEach(function(elAccordionItemToggler){
     elAccordionItemToggler.addEventListener('click',function(){
         closeAccordionItem();
-        
-        elAccordionItemToggler.closest(`accordion__item`).classList.add(`accordion__item--open`)
+
+        elAccordionItemToggler.closest(`.accordion__item`).classList.add(`accordion__item--open`)
     })
 })
