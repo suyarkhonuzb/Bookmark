@@ -2,24 +2,30 @@ const elsTabsItem = document.querySelectorAll('.tabs__item');
 const elsTabsLink = document.querySelectorAll('.js-tabs-link');
 const elsTabsPanel = document.querySelectorAll('.tabs__panel');
 
+const modifier = {
+    elActiveTabItem : 'tabs__item--active',
+    elActiveTab : 'tab__panel--active',
+    elAccordionOpen : `accordion__item--open`,
+}
+
 const elsAccordionItem = document.querySelectorAll(`.accordion__item`);
 const elsAccordionItemToggler = document.querySelectorAll(`.accordion__item--toggler`);
 
 function deactivateElTabItem(){
      elsTabsItem.forEach(function(elTabsItem)
-        {elTabsItem.classList.remove('tabs__item--active');
+        {elTabsItem.classList.remove(modifier.elActiveTabItem);
     })
 }
 
 function deactivateElTabPanel(){
     elsTabsPanel.forEach(function(elTabsPanel)
-       {elTabsPanel.classList.remove('tab__panel--active');
+       {elTabsPanel.classList.remove(modifier.elActiveTab );
    })
 }
 
 function closeAccordionItem(){
     elsAccordionItem.forEach(function(elAccordionItem){
-        elAccordionItem.classList.remove(`accordion__item--open`)
+        elAccordionItem.classList.remove(modifier.elAccordionOpen)
     })
 }
 
