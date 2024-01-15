@@ -157,9 +157,6 @@ a{
 /* TABS PANELS */
 .tabs__panels {
     padding-top: 72px;
-    background-image: url(../img/bg-image.png);
-    background-repeat: no-repeat;
-    background-position:calc(50% - 508px) 156px;
     }
 
 .tabs__panel {
@@ -393,6 +390,13 @@ a{
     object-fit: contain;
     border-radius: 25px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.features{
+    margin-bottom: 75px;
+    background-image: url(../img/bg-image.png);
+    background-repeat: no-repeat;
+    background-position:calc(50% - 508px) 450px;
 }
 
 /* EXTENSION */
